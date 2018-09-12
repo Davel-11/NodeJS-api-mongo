@@ -3,8 +3,8 @@ const genres = require('./routes/genres');
 const express = require('express');
 const app = express();
 
-mongoose.connect('mongodb://172.17.0.2/vidly?authSource=admin',{
-  user: 'mongoadmin',
+mongoose.connect('mongodb://172.17.0.3/vidly?authSource=admin',{
+  user: 'root',
   pass: '1234'
 })
   .then(() => console.log('Connected to MongoDB...'))
